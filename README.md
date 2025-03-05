@@ -13,3 +13,20 @@ This project is part of the **Data606** course and involves analyzing a dataset 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
+### 2. Installing the Dependencies 
+pip install kaggle seaborn matplotlib opencv-python tensorflow numpy pandas
+
+### 3. Downloading the dataset
+import os
+os.environ['KAGGLE_CONFIG_DIR'] = "/content/"
+!kaggle datasets download -d myylee/cxr8-selected --unzip
+
+### 4. Project Structure
+
+/your-repo-name
+│── Data606_P2.ipynb   # Jupyter Notebook with the analysis
+│── data/              # Directory to store dataset files
+│── models/            # Trained models (if any)
+│── images/            # Sample images used for visualization
+│── README.md          # This file
